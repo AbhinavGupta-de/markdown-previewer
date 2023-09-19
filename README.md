@@ -10,6 +10,6 @@ To use this app, simply type markdown into the editor and the preview will updat
 
 ## Links
 
-[Live Demo](https://markdown-previewer-fcc.vercel.app/)
+[Live Demo](https://markdown-previewer-abhi.netlify.app/)
 
 [Project on FreeCodeCamp](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer)
