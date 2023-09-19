@@ -1,14 +1,27 @@
 import React from 'react';
+import { marked } from 'marked';
 
 const Main = () => {
+	const [text, setText] = React.useState('');
+
+	const handleChange = (e) => {
+		setText(e.target.value);
+	};
+
 	return (
 		<main className="main-container">
 			<div className="input-field">
-				<input type="text" placeholder="Enter your text here" />
+				<textarea
+					type="text"
+					placeholder="Enter your text here"
+					onChange={handleChange}
+					value={text}
+				/>
 			</div>
-			<div className="preview-field">
-				<p>Preview</p>
-			</div>
+			<div
+				className="preview-field"
+				dangerouslySetInnerHTML={{ __html: marked(text) }}
+			></div>
 		</main>
 	);
 };
