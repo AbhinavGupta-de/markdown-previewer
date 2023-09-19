@@ -19,7 +19,7 @@ const Main = () => {
 				/>
 			</div>
 			<div
-				className="preview-field"
+				className="preview-container"
 				dangerouslySetInnerHTML={{ __html: marked(text) }}
 			></div>
 		</main>
